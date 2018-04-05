@@ -18,7 +18,7 @@
 			<a class="navbar-brand" href="#">Coding Carter</a>
 		<div class="collapse navbar-collapse" id="navbarText">
 			<ul class="navbar-nav mr-auto">
-				<li class="nav-item active">
+				<li class="nav-item">
 					<a class="nav-link" href="#about">About<span class="sr-only">(current)</span></a>
 				</li>
 				<li class="nav-item">
@@ -88,7 +88,7 @@
 			<div class="card-block">
 				<h4 class="card-title">Email</h4>
 				<p class="card-text">Feel free to reach me at<br>CoderCarter@gmail.com</p>
-				<a href="mailto:codercarter@gmail.com" class="btn btn-primary">CONNECT</a>
+				<a href="mailto:codercarter@gmail.com" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Send me an email!">CONNECT</a>
 			</div>
 		</div>
 		<div class="card" align="center">
@@ -96,7 +96,7 @@
 			<div class="card-block">
 				<h4 class="card-title">linkedin</h4>
 				<p class="card-text">Connect and keep up with<br> me on Linkedin!</p>
-				<a href="https://www.linkedin.com/in/codercarter/" class="btn btn-primary">CONNECT</a>
+				<a href="https://www.linkedin.com/in/codercarter/" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Connect with me, keep up to date!" target="_blank">CONNECT</a>
 			</div>
 		</div>
 		<div class="card" align="center">
@@ -104,7 +104,7 @@
 			<div class="card-block">
 				<h4 class="card-title">Github</h4>
 				<p class="card-text">Check out my current<br> and past projects, and connect!</p>
-				<a href="https://github.com/CoderCarter" class="btn btn-primary">CONNECT</a>
+				<a href="https://github.com/CoderCarter" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Coders unite!  Check out what I've done!" target="_blank">CONNECT</a>
 			</div>
 		</div>
 	</div>
@@ -114,5 +114,10 @@
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+	<script>
+		$(function () {
+		$('[data-toggle="tooltip"]').tooltip()
+		})
+	</script>
   </body>
 </html>
