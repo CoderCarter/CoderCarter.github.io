@@ -1,11 +1,19 @@
+
 <!DOCTYPE html>
 <html>
+<head>
+<title>Spared by Thanos</title>
+  <meta property="og:url"           content="http://www.codercarter.com/spared.html" />
+  <meta property="og:type"          content="website" />
+  <meta property="og:title"         content="Spared by Thanos" />
+  <meta property="og:description"   content="Fun" />
+  <meta property="og:image:secure_url"         content="https://spadephoto.000webhostapp.com/spared.png" />
+</head>
 <style>
 button {
 font-size: 30px;
 background: gold;
 }
-
 .footer {
     position: fixed;
     margin-top: 150px;
@@ -16,6 +24,10 @@ background: gold;
     color: white;
     text-align: center;
 }
+.fb-share-button{
+text-align: center;
+{
+
 </style>
 <body>
 
@@ -27,6 +39,8 @@ background: gold;
 </p>
 <p id="image" align="center">
 </p>
+<div class="fb-share-button" data-href="http://codercarter.com/spared.html" data-layout="button_count" data-size="small" data-mobile-iframe="true">
+<a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fcodercarter.com%2Fspared.html&amp;src=sdkpreparse" >Share</a></div>
 <br>
 <br>
 <br>
@@ -42,14 +56,20 @@ function myFunction() {
     y = "You were spared by Thanos!"
     document.getElementById("image").innerHTML = img 
 } 
-
 else {
 	y = "You dissipate into a cloud of dust!"
     }
     document.getElementById("result").innerHTML = y;
 }
-
 </script>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 
 <div class="footer">
   <p align="center" style="font-size:30px;">Created by Coder Carter!</p>
