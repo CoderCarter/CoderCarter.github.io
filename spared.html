@@ -5,7 +5,7 @@ button {
 font-size: 30px;
 background: gold;
 }
-	
+
 .footer {
     position: fixed;
     left: 0;
@@ -22,20 +22,27 @@ background: gold;
 
 <button id="snap" style="display: block; margin: 0 auto;" onclick="myFunction()">Snap</button>
 
-<p id="result" align="center" style="font-size:50px;"></p>
+<p id="result" align="center" style="font-size:50px;">
+</p>
+<p id="image" align="center">
+</p>
 
 <script>
 function myFunction() {
+	var img = '<img src="https://spadephoto.000webhostapp.com/spared.png">';
     var x = Math.floor(Math.random() * 2);
     document.getElementById("snap").disabled = true;
     if (x==0) {
     y = "You were spared by Thanos!"
+    document.getElementById("image").innerHTML = img 
 } 
+
 else {
 	y = "You dissipate into a cloud of dust!"
     }
     document.getElementById("result").innerHTML = y;
 }
+
 </script>
 
 <div class="footer">
